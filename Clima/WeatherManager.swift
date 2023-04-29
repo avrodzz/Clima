@@ -10,7 +10,7 @@ import UIKit
 
 struct WeatherManager {
     //http is not secure, use https for a secure route
-    let weatherUrl = "https://api.openweathermap.org/data/2.5/weather?appid=a167b941511cb9be533158fe05032ea5&units=imperial"
+    let weatherUrl = "https://api.openweathermap.org/data/2.5/weather?appid=\(WEATHER_API_KEY)&units=imperial"
     
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherUrl)&q=\(cityName)"
